@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+
+//importing interceptor service to be used in application 
+import { InterceptorService } from './services/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    InterceptorService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
